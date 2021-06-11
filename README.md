@@ -7,6 +7,8 @@ If you use the Vue CLI basically you can't feel the difference between v2 and v3
 
 ```bash
 const app = new Vue({ definition here... });
+console.log(app.someAttribute);
+app.someMethod();
 ```
 
 changed to:
@@ -24,8 +26,8 @@ const realApp = app.mount('#vue-app');
 so, if externally you need access to some Vue instance property or method you must use 'realApp' not 'app':
 
 ```bash
-realApp.someAttribute;
-realApp.somemethod();
+console.log(realApp.someAttribute);
+realApp.someMethod();
 ```
 
 
