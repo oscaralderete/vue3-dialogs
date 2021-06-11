@@ -30,7 +30,7 @@ console.log(mountedApp.someAttribute);
 mountedApp.someMethod();
 ```
 
-Back to these components, check the samples please, but in short you need to call dialog and modal using "$refs" then using component method, in the case of toast component:
+Back to my components, check the samples please, but in short you need to call dialog and modal using "$refs" then using component method, in the case of toast component:
 
 ```bash
 this.$refs.toastRefName.text({
@@ -45,14 +45,21 @@ in the other case, you need to invoque the .show() method:
 this.$refs.modalRefName.show({
   title: "ALERT", //optional, the dialog title
   message: "Your awesome modal message here!", //the only required property
-  buttons: {
-    ok: {
-      callback: () => {
-        console.log("Default modal callback..");
+  buttons: { //optional
+    ok: { //optional
+      label: 'OKI', //optional, default 'OK'
+      callback: () => { //optional, you can call some predefined method or anonymous funtions
+        console.log("This callback will run after click on OK button..");
       },
     },
+    cancel: { //optional
+      label: 'DISAGREE', //optional, default 'CANCEL'
+      callback: this.predefinedCancelCallback //optional
+    }
   },
 })
 ```
+
+Vue 3 is cool and now it's mature enough to use in your daily work, no matter if you develop projects using the CLI or coding SSR apps, try it, it's a 5-star!
 
 There is a live version: https://experiments.oscaralderete.com/vue3-dialogs/
