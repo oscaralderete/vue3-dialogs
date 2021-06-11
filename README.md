@@ -62,4 +62,4 @@ this.$refs.modalRefName.show({
 
 Vue 3 is cool and now it's mature enough to use in your daily work, no matter if you develop projects using the CLI or coding SSR apps, try it, it's a 5-star!
 
-There is a live version: https://experiments.oscaralderete.com/vue3-dialogs/
+There is a live version you can play here: https://experiments.oscaralderete.com/vue3-dialogs/
