@@ -35,8 +35,8 @@ Back to my components, check the samples please, but in short you need to call d
 ```bash
 this.$refs.toastRefName.text({
   message: "This is the toast message!",
-  type: "success", //optional, if not accepts: 'success', 'error' and 'warning'
-  callback: this.myToastCallback //this is optional too
+  type: "success", //optional, possible values: 'success', 'error' and 'warning'
+  callback: this.myToastCallback //optional, runs when close or timeout
 })
 ```
 in the other case, you need to invoque the .show() method:
