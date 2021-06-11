@@ -223,7 +223,6 @@ export default {
           title: "ERROR",
           message: "Your modal message can't be empty!",
           buttons: {
-            label: "custom",
             ok: {
               callback: () => {
                 console.log("Default modal callback..");
