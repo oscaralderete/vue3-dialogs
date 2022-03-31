@@ -37,7 +37,7 @@ export default {
     getDefaultMessage() {
       return {
         title: "ALERT",
-        message: "You need to define you're custom message...",
+        message: "You need to define your custom message...",
         buttons: {
           ok: {
             label: "OK",
